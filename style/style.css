@@ -10,7 +10,10 @@
 }
 
 
-  
+html {
+    scroll-behavior: smooth;
+}
+
 
 body {
     background-color: #1b1f3b;
@@ -50,8 +53,25 @@ a {
     justify-content: center;
 }
 
+.container-navbar .nav-link #curriculum {
+    transition: transform 0.3s ease;
+}
+
+.container-navbar .nav-link #curriculum:hover {
+    color: #D3D3D3; 
+}
+
 .container-navbar a {
     text-decoration: none;
+}
+
+.container-navbar .soon a{
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.container-navbar a i {
+    color: #e63946;
 }
 
 
@@ -94,12 +114,31 @@ a {
 }
 
 
-.links {
+.container-links {
     margin-top: 50px;
     display: flex;
     justify-content: start;
     gap: 40px;
     align-items: center;
+}
+
+
+.container-links .link {
+    background-color: #1b1f3b;
+    border-radius: 5px;
+    padding: 20px;
+    border: 2px solid transparent; 
+    transition: border-color 0.4s ease;
+}
+
+.container-links .link:hover {
+    border: 2px solid #e63946;
+}   
+
+
+.container-links .link a {
+    color: #e63946;
+    font-size: 2.75rem;
 }
 
 .container-text #about-me {
@@ -122,6 +161,7 @@ a {
     margin-top: 340px;
     display: flex;
     flex-direction: column;
+    padding: 50px 0px;
 }
 
 .skills h3 {
@@ -133,11 +173,33 @@ a {
 
 
 .skills .languages {
-    border: 2px solid #f0f0f0;
     margin: 20px auto;
     padding: 20px;
-    width: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
 }
+
+.skills .languages .skill {
+    padding: 1.5rem;
+    background-color: #1b1f3b;
+    border-radius: 5px;
+    border: 2px solid transparent; 
+    transition: border-color 0.4s ease; 
+}
+
+.skills .languages .skill:hover { 
+    border: 2px solid #e63946;
+}
+
+    
+
+.skills .languages .skill i {
+    color: #e63946;
+    font-size: 5.75rem;
+}
+
+
 
 
 
@@ -170,14 +232,30 @@ a {
     padding: 20px;
 }
 
+
 .project a {
     font-size: 1.5rem;
+}
+
+
+.projects a {
+    transition: color 0.3s ease;
+}
+
+
+.projects a:hover {
+   color: #ff6b81;
 }
 
 
 /* Definindo as cores dos containers */
 .project #first {
     color: #00A31B;
+    transition: color 0.3s ease;
+}
+
+.project #first:hover {
+    color: #00C82B; 
 }
 
 .container-project .first {
@@ -186,7 +264,14 @@ a {
 
 .project #second {
     color: #6A7DFF;
+    transition: color 0.3s ease; 
 }
+
+
+.project #second:hover {
+    color: #8A9BFF; 
+}
+
 .container-project .second {
     border: 3px solid #6A7DFF;
 }
@@ -209,6 +294,7 @@ a {
     font-size: 30px;
     margin: 60px auto;
 }
+
 
 
 
