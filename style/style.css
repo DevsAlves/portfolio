@@ -81,6 +81,7 @@ a {
     margin-top: 120px;
 } 
 
+
 .container-me {
     display: flex;
     margin: 0 auto;
@@ -202,11 +203,6 @@ a {
 
 
 
-
-
-
-
-
 /* Projects */
 
 .projects h3 {
@@ -313,3 +309,8 @@ footer {
 footer p {
     margin: 20px auto;
 }
+
+
+
+
+/* Animations */
