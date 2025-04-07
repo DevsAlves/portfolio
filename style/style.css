@@ -331,3 +331,16 @@ footer p {
 
 
 /* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px); /* Começa um pouco mais baixo */
+    transition: 
+    opacity 0.5s ease-out, 
+    transform 0.5s ease-out;
+}
+
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* Volta pra posição normal */
+}
