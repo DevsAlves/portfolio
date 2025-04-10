@@ -28,6 +28,7 @@ a {
 
 .bold {
     color: #e63946;
+    font-weight: 500;
 }
 
 .point {
@@ -168,6 +169,7 @@ a {
     flex-direction: column;
     padding: 50px 0px;
 }
+
 
 .skills h3 {
     font-size: 3rem;
