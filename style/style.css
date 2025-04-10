@@ -82,9 +82,13 @@ a {
 } 
 
 
+.about-me {
+    margin-bottom: 380px;
+}
+
 .container-me {
     display: flex;
-    margin: 0 auto;
+    margin: 40px auto;
     width: 60%;
     background-color:#2A315A ;
     padding: 35px;

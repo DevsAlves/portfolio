@@ -7,6 +7,7 @@ const content = document.querySelector("#content-language")
 const containerShowSkill = document.querySelector(".show-skill")
 
 
+// Array de informações
 const infos = [
     {
         name: "HTML",
@@ -23,6 +24,10 @@ const infos = [
     {
         name: "Git",
         info: "Sistema de controle de versões que permite gerenciar o histórico de alterações no código."
+    },
+    {
+        name: "GitHub",
+        info: "Plataforma online para hospedar e colaborar em projetos com Git."
     }
 ]
 
@@ -34,6 +39,7 @@ skills.forEach( (elemento) => {
 
         const dataInfo = elemento.getAttribute('data-info')
 
+        // Verifica se o elemento que foi passado o mouse possui alguma referência no array
         const result = infos.find(el => el.name.toLowerCase() === dataInfo)
 
         // Condição de se um name da array é igual ao data-info do elemento que foi passado o mouse
@@ -42,10 +48,9 @@ skills.forEach( (elemento) => {
 
             // Animation
             containerShowSkill.classList.remove("show")
-            // Fazer com que remove + add de classes animadas funcionem toda vez
             void containerShowSkill.offsetWidth
 
-            // Aplica a classe "fade-in" e depois ativa a animação com um pequeno atraso
+
             containerShowSkill.classList.add("fade-in")
 
             containerShowSkill.classList.add("show")
