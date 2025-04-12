@@ -1,6 +1,6 @@
 
 // Selecionar elementos
-const skills = document.querySelectorAll(".skill")
+const skills = document.querySelectorAll(".icon-skill")
 const containerLanguage = document.querySelector(".show-skill")
 const heading = document.querySelector("#heading")
 const content = document.querySelector("#content-language")
@@ -43,19 +43,20 @@ skills.forEach( (elemento) => {
         const result = infos.find(el => el.name.toLowerCase() === dataInfo)
 
         // Condição de se um name da array é igual ao data-info do elemento que foi passado o mouse
-        // Se o find retornar algo ele vai aplicar os conteúdos 
+        // Se o find retornar algo ele vai aplicar os conteúdos
+
         if(result) {
 
-            // Animation
-            containerShowSkill.classList.remove("show")
-            void containerShowSkill.offsetWidth
+            // Prepara para nova animação
+            containerShowSkill.classList.remove("fade-out");
+            containerShowSkill.classList.remove("hide");
+            containerShowSkill.classList.remove("hidden");
+            void containerShowSkill.offsetWidth;
 
-
+            
             containerShowSkill.classList.add("fade-in")
-
             containerShowSkill.classList.add("show")
            
-
             heading.textContent = result.name
             content.textContent = result.info
 
@@ -64,7 +65,25 @@ skills.forEach( (elemento) => {
         }
     })
 
-    elemento.addEventListener("mouseout" , () => {
-        containerLanguage.style.display = 'none'
+    elemento.addEventListener("mouseout", () => {
+        containerShowSkill.classList.remove("fade-in")
+        containerShowSkill.classList.remove("show")
+        containerShowSkill.classList.remove("fade-out", "hide", "hidden");
+        
+        void containerShowSkill.offsetWidth
+
+        // Inicia a animação de saída
+        containerShowSkill.classList.add("fade-out")
+        containerShowSkill.classList.add("hide")
+
+        // Quando terminar a animação de saída
+        const onTransitionEnd = () => {
+            containerShowSkill.classList.add("hidden");
+            
+            containerShowSkill.removeEventListener("transitionend", onTransitionEnd);
+      };
+  
+      containerShowSkill.addEventListener("transitionend", onTransitionEnd);
     })
+      
 })
