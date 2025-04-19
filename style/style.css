@@ -17,9 +17,9 @@ html {
 
 body {
     background-color: #1b1f3b;
-    max-width: 3000px;
     width: 100%;
 }
+
 
 a {
     text-decoration: none;
@@ -395,7 +395,7 @@ footer p {
 
 /* Responsividade */
 
-/* Celulares */
+/* ─── 📱 Mobile ─────────────────────────────────────────*/
 @media (max-width: 425px) {
     .container-navbar {
         font-size: 1.4rem;
@@ -514,7 +514,7 @@ footer p {
 
 }
 
-/* Tablets */
+/*  ─── 💻 Tablet ────────────────────────────────────────*/
 @media (min-width: 600px) and (max-width:1024px) {
     .container-navbar {
         font-size: 1.7rem;
@@ -607,10 +607,10 @@ footer p {
 }
 
 
-/* Notebooks */
+/*  ─── 💻 Notebooks ──────────────────────────────────────── */
 @media (min-width: 1025px) and (max-width: 1920px) {
     .container-navbar {
-        font-size: 1.9rem;
+        font-size: 1.3rem;
         padding: 45px 20px;
         justify-content: space-evenly;
     }
@@ -631,6 +631,10 @@ footer p {
         padding: 30px;
         display: flex;
         flex-direction: column;
+    }
+
+    .container-me .container-img img {
+        width: 300px;
     }
 
     .container-text {
@@ -664,6 +668,7 @@ footer p {
 
     .skills .languages {
         gap: 30px;
+        display: flex;
         justify-content: space-between;
     }
 
@@ -710,7 +715,7 @@ footer p {
     }
 }
 
-/* Apple Watch (telas super pequenas) */
+/* ─── 📱 Apple Watch ───────────────────────────────────────── */
 @media (max-width: 200px) {
     body {
         font-size: 1.2rem;
