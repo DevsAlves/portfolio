@@ -387,3 +387,443 @@ footer p {
 .hidden {
     display: none;
 }
+
+
+
+
+
+/* Responsividade */
+
+/* Celulares */
+@media (max-width: 425px) {
+    .container-navbar {
+        font-size: 1.4rem;
+        padding: 30px 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px
+    }
+
+    .container-navbar .soon a {
+        font-size: 2rem;
+    }
+
+
+    /* Container sobre mim */
+    .container-me {
+        flex-direction: column;
+        width: 90%;
+        padding: 20px;
+    }
+
+    .container-me .container-img img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .container-text {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .container-text .title h3 {
+        font-size: 2.8rem;
+    }
+
+    .container-text p {
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    .container-text p:last-of-type {
+        text-align: justify;
+    }
+
+    .container-links {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    /* Container da parte de habilidades */
+
+    .skills {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .skills h3 {
+        font-size: 2.2rem;
+    }
+
+    .skills .languages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-show-skill {
+        display: none;
+    }
+
+
+    /* Container sobre meus projetos */
+
+    .projects {
+        width: 90%;
+    }
+
+    .projects a {
+        font-size: 1.3rem;
+    }
+
+    .projects h3 {
+        font-size: 2.2rem;
+    }
+
+    .project {
+        width: 100%;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .container-project {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .project h3 {
+        font-size: 2rem;
+    }
+
+    .project p {
+        font-size: 1.8rem;
+    }
+
+
+    footer {
+        flex-direction: column;
+        font-size: 1.1rem;
+        height: auto;
+    }
+
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width:1024px) {
+    .container-navbar {
+        font-size: 1.7rem;
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 16px;
+        text-align: center;
+    }
+
+    .container-navbar .nav-link  {
+        align-self: center;
+        justify-content: center;
+    }
+
+    .container-navbar .nav-link a {
+        margin: 0 auto;
+    }
+
+    /* Container sobre mim */
+    .container-me {
+        flex-direction: column;
+        width: 85%;
+    }
+
+    .container-text {
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+
+    .container-text .title h3 {
+        font-size: 3.2rem;
+    }
+
+    .container-text p {
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+    }
+
+    .container-text p:last-of-type {
+        text-align: justify;
+    }
+
+    .container-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .skills {
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    .skills .languages {
+        justify-content: center;
+    }
+
+    .container-show-skill {
+        display: none;
+    }
+
+    .container-project {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .project {
+        width: 90%;
+        height: auto;
+    }
+
+    .projects {
+        width: 90%;
+    }
+
+    .project h3 {
+        font-size: 2.2rem;
+    }
+
+    .project p {
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 1.1rem;
+        padding: 30px;
+    }
+}
+
+
+/* Notebooks */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .container-navbar {
+        font-size: 1.9rem;
+        padding: 45px 20px;
+        justify-content: space-evenly;
+    }
+
+    .container-navbar .nav-link  {
+        align-self: center;
+        justify-content: center;
+    }
+
+    .container-navbar .nav-link a {
+        margin: 0 auto;
+    }
+
+
+    /* Container sobre mim  */
+    .container-me {
+        width: 75%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-text {
+        margin-left: 30px;
+    }
+
+    .container-text .title h3 {
+        font-size: 3.4rem;
+    }
+
+    .container-text p {
+        font-size: 1.9rem;
+        line-height: 2.4rem;
+    }
+
+    .container-links {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    /* Container sobre minhas habilidades */
+
+    .skills {
+        padding: 70px 60px;
+    }
+
+    .skills h3 {
+        font-size: 2.5rem;
+    }
+
+    .skills .languages {
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .skills .languages .skill i {
+        font-size: 3.75rem;
+    }
+
+    .show-skill h4 {
+        font-size: 1.8rem;
+    }
+
+    .show-skill p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+
+
+    /* Container da parte dos projetos  */
+    .projects {
+        width: 85%;
+    }
+
+    .container-project {
+        gap: 40px;
+    }
+
+    .project {
+        width: 48%;
+        height: auto;
+    }
+
+    .project h3 {
+        font-size: 2.4rem;
+    }
+
+    .project p {
+        font-size: 2rem;
+    }
+
+    footer {
+        font-size: 1.5rem;
+        padding: 35px;
+    }
+}
+
+/* Apple Watch (telas super pequenas) */
+@media (max-width: 200px) {
+    body {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .container-navbar {
+        flex-direction: column;
+        font-size: 1rem;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .container-navbar .soon a {
+        font-size: 1.4rem;
+    }
+
+    .container-me {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container-me .container-text .title h3{
+        font-size: 20px;
+    }
+
+    .container-text {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .container-text p {
+        font-size: 12px;
+        line-height: 1.6rem;
+    }
+
+    .container-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    /* Container das minhas habilidades */
+
+    .skills {
+        padding: 20px 10px;
+        flex-direction: column;
+    }
+
+    .skills h3 {
+        font-size: 16px;
+    }
+
+    .point{
+        display: none;
+    }
+
+    .skills .languages {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .skills .languages .skill i {
+        font-size: 30px;
+    }
+
+
+    .container-show-skill {
+        display: none;
+    }
+
+
+    /* Container dos meus projetos */
+    .projects {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .projects a {
+        font-size: 16px;
+    }
+
+    .projects h3 {
+        font-size: 20px;
+    }
+
+    .project {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .project h3 {
+        font-size: 1.2rem;
+    }
+
+    .project p {
+        display: none;
+    }
+
+    .project a {
+        font-size: 16px;
+    }
+
+    footer {
+        font-size: 12px;
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    footer p:last-child {
+        display: none;
+    }
+}
