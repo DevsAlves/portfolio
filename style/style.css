@@ -607,7 +607,7 @@ footer p {
 
 
 /* Notebooks */
-@media (min-width: 1025px) and (max-width: 1440px) {
+@media (min-width: 1025px) and (max-width: 1920px) {
     .container-navbar {
         font-size: 1.9rem;
         padding: 45px 20px;
@@ -829,88 +829,4 @@ footer p {
 }
 
 
-/* Lidando com os erros de responsividade */
-@media (min-width: 1440px) and (max-width: 1600px) {
-    .container-me {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; /* garante alinhamento horizontal */
-        text-align: center;
-        padding: 20px 40px;
-        width: 70%;
-        margin: 0 auto;
-        gap: 20px; /* adiciona espaçamento entre os elementos */
-    }
-    
-    .container-img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .container-img img {
-        width: 250px;
-        height: 250px;
-        object-fit: cover;
-        border-radius: 50%;
-    }
-    
-    .container-text {
-        max-width: 800px;
-        font-size: 1.1rem;
-        line-height: 1.8;
-    }
-    
-    .container-me .container-links {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 20px;
-    }
-    
 
-    /* Skills - mais espaço e melhor organização */
-    .skills .languages {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    .skills .languages .skill i {
-        font-size: 3.8rem;
-    }
-
-    .container-show-skill {
-        margin-top: 40px;
-    }
-
-    .show-skill p {
-        font-size: 20px;
-        line-height: 33px;
-    }
-
-
-    /* Projetos lado a lado */
-    .projects .container-project {
-        display: flex;
-        flex-direction: row; /* Lado a lado */
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    .projects .project {
-        width: 45%;
-        max-width: 600px;
-    }
-
-    /* Footer centralizado */
-    footer {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-    }
-}
