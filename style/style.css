@@ -10,13 +10,15 @@
 }
 
 
-/* html {
+html {
     scroll-behavior: smooth;
-}  */
+} 
 
 
 body {
     background-color: #1b1f3b;
+    max-width: 3000px;
+    width: 100%;
 }
 
 a {
