@@ -12,7 +12,7 @@
 
 html {
     scroll-behavior: smooth;
-}
+} 
 
 
 body {
@@ -826,4 +826,69 @@ footer p {
     footer p:last-child {
         display: none;
     }
+}
+
+
+/* Lidando com os erros de responsividade  */
+
+@media (max-width:1600) {
+    @media (max-width: 1600px) {
+        /* Ajuste o container principal */
+        #container-main {
+            padding: 0 40px;
+        }
+    
+        /* Reduz o espaço entre imagem e texto */
+        .container-me {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+    
+        .container-img img {
+            width: 250px;
+            height: auto;
+        }
+    
+        .container-text {
+            max-width: 800px;
+            font-size: 1.1rem;
+        }
+    
+        /* Skills - reduz espaço e organiza melhor */
+        .skills .languages {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+    
+        .skills .skill i {
+            font-size: 3rem;
+        }
+    
+        .container-show-skill {
+            margin-top: 40px;
+            text-align: center;
+        }
+    
+        /* Projetos */
+        .projects .container-project {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    
+        .projects .project {
+            width: 100%;
+            max-width: 600px;
+        }
+    
+        /* Footer centralizado */
+        footer {
+            text-align: center;
+            padding: 20px;
+        }
+    }
+    
 }
