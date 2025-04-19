@@ -239,7 +239,7 @@ a {
 
 .show-skill p {
     font-size: 24px;
-    line-height: 12px;
+    line-height: 20px;
     margin-top: 20px;
 }
 
@@ -829,62 +829,88 @@ footer p {
 }
 
 
-/* Lidando com os erros de responsividade  */
-@media (max-width: 1600px) {
-        /* Ajuste o container principal */
-        #container-main {
-            padding: 0 40px;
-        }
+/* Lidando com os erros de responsividade */
+@media (min-width: 1440px) and (max-width: 1600px) {
+    .container-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* garante alinhamento horizontal */
+        text-align: center;
+        padding: 20px 40px;
+        width: 70%;
+        margin: 0 auto;
+        gap: 20px; /* adiciona espaçamento entre os elementos */
+    }
     
-        /* Reduz o espaço entre imagem e texto */
-        .container-me {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: 20px;
-        }
+    .container-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     
-        .container-img img {
-            width: 250px;
-            height: auto;
-        }
+    .container-img img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
     
-        .container-text {
-            max-width: 800px;
-            font-size: 1.1rem;
-        }
+    .container-text {
+        max-width: 800px;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
     
-        /* Skills - reduz espaço e organiza melhor */
-        .skills .languages {
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 30px;
-        }
+    .container-me .container-links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
     
-        .skills .skill i {
-            font-size: 3rem;
-        }
-    
-        .container-show-skill {
-            margin-top: 40px;
-            text-align: center;
-        }
-    
-        /* Projetos */
-        .projects .container-project {
-            flex-direction: column;
-            align-items: center;
-            gap: 30px;
-        }
-    
-        .projects .project {
-            width: 100%;
-            max-width: 600px;
-        }
-    
-        /* Footer centralizado */
-        footer {
-            text-align: center;
-            padding: 20px;
-        }
+
+    /* Skills - mais espaço e melhor organização */
+    .skills .languages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .skills .languages .skill i {
+        font-size: 3.8rem;
+    }
+
+    .container-show-skill {
+        margin-top: 40px;
+    }
+
+    .show-skill p {
+        font-size: 20px;
+        line-height: 33px;
+    }
+
+
+    /* Projetos lado a lado */
+    .projects .container-project {
+        display: flex;
+        flex-direction: row; /* Lado a lado */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .projects .project {
+        width: 45%;
+        max-width: 600px;
+    }
+
+    /* Footer centralizado */
+    footer {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
 }
