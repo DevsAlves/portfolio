@@ -830,7 +830,6 @@ footer p {
 
 
 /* Lidando com os erros de responsividade  */
-
 @media (max-width: 1600px) {
         /* Ajuste o container principal */
         #container-main {
