@@ -612,7 +612,7 @@ footer p {
     .container-navbar {
         font-size: 1.3rem;
         padding: 45px 20px;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .container-navbar .nav-link  {
