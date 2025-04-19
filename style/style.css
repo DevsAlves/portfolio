@@ -831,8 +831,7 @@ footer p {
 
 /* Lidando com os erros de responsividade  */
 
-@media (max-width:1600) {
-    @media (max-width: 1600px) {
+@media (max-width: 1600px) {
         /* Ajuste o container principal */
         #container-main {
             padding: 0 40px;
@@ -889,6 +888,4 @@ footer p {
             text-align: center;
             padding: 20px;
         }
-    }
-    
 }
