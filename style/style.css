@@ -396,7 +396,7 @@ footer p {
 /* Responsividade */
 
 /* ─── 📱 Mobile ─────────────────────────────────────────*/
-@media (min-width:200px) and (max-width: 568px) {
+@media (min-width:210px) and (max-width: 568px) {
     .container-navbar {
         font-size: 1.4rem;
         padding: 30px 10px;
